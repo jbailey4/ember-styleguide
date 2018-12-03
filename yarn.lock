@@ -727,6 +727,20 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.7"
 
+"@fortawesome/free-regular-svg-icons@5.4.2":
+  version "5.4.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-5.4.2.tgz#88a0d8e5a270aee37eb9f54707ca6d769a0c7a75"
+  integrity sha512-rjYHr3yTMp6Ow4xNdNkGt92siQ3ytSQcE5wYtVC745iWeqYbPNo7vkSEyrH771Z/g8clux5z+Wf9UxXBQSzhqQ==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.7"
+
+"@fortawesome/free-solid-svg-icons@5.4.2":
+  version "5.4.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.4.2.tgz#185fdab8806d5726846719dd7f8a2756c7b4f7fe"
+  integrity sha512-emie9CsLZPLVPH1adR3MNGNlm0GSVvEuUbZkQr0uXSp+Q9SZL0/OF6ava3DCKkwDbjn3jDKPchOraj0Vkuat6Q==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.7"
+
 "@glimmer/compiler@^0.27.0":
   version "0.27.0"
   resolved "https://registry.yarnpkg.com/@glimmer/compiler/-/compiler-0.27.0.tgz#b24042752a53171d5cb3d9a95a29dfc0f314ed2c"
@@ -9849,24 +9863,6 @@ node-gyp@^3.3.1:
     tar "^2.0.0"
     which "1"
 
-node-gyp@^3.8.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-3.8.0.tgz#540304261c330e80d0d5edce253a68cb3964218c"
-  integrity sha512-3g8lYefrRRzvGeSowdJKAKyks8oUpLEd/DyPV4eMhVlhJ0aNaZqIrNUIPuEWWTAoPqyFkfGrM67MC69baqn6vA==
-  dependencies:
-    fstream "^1.0.0"
-    glob "^7.0.3"
-    graceful-fs "^4.1.2"
-    mkdirp "^0.5.0"
-    nopt "2 || 3"
-    npmlog "0 || 1 || 2 || 3 || 4"
-    osenv "0"
-    request "^2.87.0"
-    rimraf "2"
-    semver "~5.3.0"
-    tar "^2.0.0"
-    which "1"
-
 node-int64@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/node-int64/-/node-int64-0.4.0.tgz#87a9065cdb355d3182d8f94ce11188b825c68a3b"
@@ -9931,31 +9927,6 @@ node-sass@^4.7.2:
     node-gyp "^3.3.1"
     npmlog "^4.0.0"
     request "2.87.0"
-    sass-graph "^2.2.4"
-    stdout-stream "^1.4.0"
-    "true-case-path" "^1.0.2"
-
-node-sass@^4.9.4:
-  version "4.9.4"
-  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.9.4.tgz#349bd7f1c89422ffe7e1e4b60f2055a69fbc5512"
-  integrity sha512-MXyurANsUoE4/6KmfMkwGcBzAnJQ5xJBGW7Ei6ea8KnUKuzHr/SguVBIi3uaUAHtZCPUYkvlJ3Ef5T5VAwVpaA==
-  dependencies:
-    async-foreach "^0.1.3"
-    chalk "^1.1.1"
-    cross-spawn "^3.0.0"
-    gaze "^1.0.0"
-    get-stdin "^4.0.1"
-    glob "^7.0.3"
-    in-publish "^2.0.0"
-    lodash.assign "^4.2.0"
-    lodash.clonedeep "^4.3.2"
-    lodash.mergewith "^4.6.0"
-    meow "^3.7.0"
-    mkdirp "^0.5.1"
-    nan "^2.10.0"
-    node-gyp "^3.8.0"
-    npmlog "^4.0.0"
-    request "^2.88.0"
     sass-graph "^2.2.4"
     stdout-stream "^1.4.0"
     "true-case-path" "^1.0.2"
@@ -11574,7 +11545,7 @@ request@2.87.0:
     tunnel-agent "^0.6.0"
     uuid "^3.0.0"
 
-request@^2.87.0, request@^2.88.0:
+request@^2.87.0:
   version "2.88.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.0.tgz#9c2fca4f7d35b592efe57c7f0a55e81052124fef"
   integrity sha512-NAqBSrijGLZdM0WZNsInLJpkJokL72XYjUpnB0iwsRgxh7dB6COrHnTBNwN0E+lHDAJzu7kLAkDeY08z2/A0hg==
@@ -11963,6 +11934,13 @@ sass@^1.14.1:
   version "1.14.2"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.14.2.tgz#6fabdb10939a3f6848cda59b7d91d6a3103923c0"
   integrity sha512-2tv+ROdMomDr9+uc+LCSUPFTZwOZ0MB7BbidrRZ5s3pbg1qKTKS7pL71dVvkOUjrSicHuk7fnqEVG73oa9FJtg==
+  dependencies:
+    chokidar "^2.0.0"
+
+sass@^1.15.1:
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.15.1.tgz#25a03f6813413540210580b670628360c36267d3"
+  integrity sha512-WiDa5BsePB/rQEbh/Fv2pVDUCasxuRYjW7GsWx8Ld23LY61vx1VV5Mzf/7mu5kLWKMryMqo65fzYL34HgaM47w==
   dependencies:
     chokidar "^2.0.0"
 

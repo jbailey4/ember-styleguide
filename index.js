@@ -2,7 +2,7 @@
 const mergeTrees = require('broccoli-merge-trees');
 const Funnel = require('broccoli-funnel');
 const path = require('path');
-const nodeSass = require('node-sass');
+const sass = require('sass');
 
 module.exports = {
   name: require('./package').name,
@@ -35,7 +35,7 @@ module.exports = {
 
     target.options['ember-bootstrap'] = target.options['ember-bootstrap'] || defaultEmberBootStrapOptions;
 
-    target.options.sassOptions = target.options.sassOptions || { implementation: nodeSass };
+    target.options.sassOptions = target.options.sassOptions || { implementation: sass };
 
     this.checkPreprocessor();
 

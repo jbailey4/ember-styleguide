@@ -36,13 +36,13 @@
     "ember-cli-sass": "^8.0.1",
     "ember-svg-jar": "^1.2.2",
     "ember-truth-helpers": "^2.1.0",
-    "node-sass": "^4.9.4"
+    "sass": "^1.15.1"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.7.0",
     "@fortawesome/ember-fontawesome": "^0.1.8",
-    "@fortawesome/free-solid-svg-icons": "5.4.2",
     "@fortawesome/free-regular-svg-icons": "5.4.2",
+    "@fortawesome/free-solid-svg-icons": "5.4.2",
     "broccoli-asset-rev": "^3.0.0",
     "ember-a11y-landmarks": "^1.0.1",
     "ember-cli": "~3.5.0",
